@@ -1,0 +1,14 @@
+<div class="card m-2" style="width: 18rem;">
+    {{#if status}}
+  <div class="card-header" style="background: rgb(119, 236, 119)">
+    {{else}}
+  <div class="card-header" style="background: rgb(211, 114, 114)">
+    {{/if}}
+    {{title}}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{name}}</h5>
+    <p class="card-text">{{content}}</p>
+    <a href="/single/{{id}}" class="btn btn-primary">show</a>
+  </div>
+</div>

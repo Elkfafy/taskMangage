@@ -1,0 +1,13 @@
+{{>header}}
+{{>navbar}}
+{{#if status}}
+<section class="container alert alert-success text-center">
+{{else}}
+<section class="container alert alert-danger text-center">
+{{/if}}
+    <h3>Task</h3>
+    <div><strong>Name: </strong>{{name}}</div>
+    <div><strong>Title: </strong>{{title}}</div>
+    <div><strong>Content: </strong>{{content}}</div>
+</section>
+{{>footer}}

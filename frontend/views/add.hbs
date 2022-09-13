@@ -1,0 +1,30 @@
+{{>header}}
+{{>navbar}}
+<section class="container mt-4">
+    <form action="/add" method="post">
+        <div class="mb-3">
+            <input type="text" name="name" placeholder="Task Name" class="form-control">
+        </div>
+        <div class="mb-3">
+            <input type="text" name="title" placeholder="Task Title" class="form-control">
+        </div>
+        <div class="mb-3">
+            <input type="text" name="content" placeholder="Task Content" class="form-control">
+        </div>
+        <div class="mb-3 form-control">
+            Status: 
+            <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Done</label>
+                <input class="form-check-input" name="status" value="true" type="checkbox" id="flexSwitchCheckDefault">
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-primary">
+                Add Cutomer
+            </button>
+        </div>
+
+
+    </form>
+</section>
+{{>footer}}
