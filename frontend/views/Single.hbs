@@ -1,13 +1,16 @@
 {{>header}}
 {{>navbar}}
+    {{#with task}}
 {{#if status}}
 <section class="container alert alert-success text-center">
 {{else}}
 <section class="container alert alert-danger text-center">
 {{/if}}
     <h3>Task</h3>
+    <div><strong>ID: </strong>{{id}}</div>
     <div><strong>Name: </strong>{{name}}</div>
     <div><strong>Title: </strong>{{title}}</div>
     <div><strong>Content: </strong>{{content}}</div>
+    {{/with}}
 </section>
 {{>footer}}

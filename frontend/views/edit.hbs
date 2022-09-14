@@ -1,0 +1,24 @@
+{{>header}}
+{{>navbar}}
+<section class="container mt-4">
+    <form method="post">
+    {{#with task}}
+        <div class="mb-3">
+            <input type="text" value="{{name}}" name="name" placeholder="Task Name" class="form-control">
+        </div>
+        <div class="mb-3">
+            <input type="text" value="{{title}}" name="title" placeholder="Task Title" class="form-control">
+        </div>
+        <div class="mb-3">
+            <input type="text" value="{{content}}" name="content" placeholder="Task Content" class="form-control">
+        </div>
+        <div>
+            <button class="btn btn-primary">
+                Edit Task
+            </button>
+        </div>
+    {{/with}}
+
+    </form>
+</section>
+{{>footer}}
