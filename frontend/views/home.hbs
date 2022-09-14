@@ -1,9 +1,12 @@
 {{>header}}
 {{>navbar}}
 <div class="d-flex flex-wrap container mt-3">
+{{#unless tasks}}
+<div class="container alert alert-warning">There isn't any tasks.</div>
+{{else}}
 {{#each tasks}}
 {{>task}}
 {{/each}}
-
+{{/unless}}
 </div>
 {{>footer}}
